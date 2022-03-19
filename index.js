@@ -20,11 +20,6 @@ async function createEmbed() {
 
     let circleList = []
 
-
-    const getDate = date => {
-        return new Date(date);
-    }
-
     for (const member of members) {
         if (member.location) {
             circleList.push({name: member.firstName, 
