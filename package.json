@@ -4,8 +4,7 @@
   "description": "A Life 360 Discord Bot",
   "main": "index.js",
   "scripts": {
-    "build": "node deploy-commands.js & node index.js",
-    "start": "node index.js"
+    "start": "node deploy-commands.js & node index.js"
   },
   "author": "",
   "license": "ISC",
