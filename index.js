@@ -20,10 +20,13 @@ async function createEmbed() {
 
     let circleList = []
 
+    console.log(members[2]);
+
     for (const member of members) {
         if (member.location) {
             circleList.push({name: member.firstName, 
-                value: "At " + (member.location.name ? member.location.name : "Unkown Location")
+                value: "At " + (member.location.name ? member.location.name : (member.location.shortAddress ? 
+                    member.location.shortAddress : "Unknown Location"))
                 + " For: " 
                 + Math.trunc((Date.now() - new Date(member.location.since)) / (1000 * 3600)) + ' Hours'});
         }
